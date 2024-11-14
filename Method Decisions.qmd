@@ -1,0 +1,45 @@
+---
+title: "Fidelity Investments : RAG  Chatbot final methods"
+format: pdf
+editor: visual
+---
+
+## About
+
+This documentation contains the methods that were decided by MSSP Team after careful considerations that include literature review, trying new methods, test and compare etc. to further proceed with this project.
+
+## Documents Related Methods
+
+#### What kind of Documents?
+
+This is one of the key question in this project. We are trying to analyze what kind of attributes of a documents make it better to be in a knowledge base of RAG.
+
+For this project, we decided onto using Sci-kit and NBA Rule-books. (PDFs)
+
+#### Chunking Method 
+
+Decided Method - Token based (default) : Overlap 200, chunck size - 1000
+
+Other options - Open parse ( time permitted )
+
+#### Embedding Method
+
+Decided Method - Text Small Text Large ( default ) : Text embedding 3-large
+
+#### Retrieval Method 
+
+Cosine Similarity ( 0.7 Threshold as of now)
+
+#### Large Language Model
+
+GPT 3.5 Turbo
+
+#### Prompt
+
+If given simple question without much context or additional information, given answers will yield citations.
+
+However, adding more information will result in a detailed answer.
+
+#### Evaluation Metric
+
+Context Precision
